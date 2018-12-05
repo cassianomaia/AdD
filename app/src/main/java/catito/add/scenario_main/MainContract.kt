@@ -6,6 +6,7 @@ interface MainContract {
 
     interface View{
         fun showList(drinks: List<Drink>)
+        fun startDrinkActivity(drink: Drink)
         fun showMessage(mensagem: String)
         fun hideLoading()
         fun showLoading()
@@ -13,5 +14,6 @@ interface MainContract {
 
     interface Presenter{
         fun onLoadList()
+        fun onClickDrink(drinks: Drink)
     }
 }
