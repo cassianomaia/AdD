@@ -10,6 +10,7 @@ import catito.add.entities.Drink
 import kotlinx.android.synthetic.main.drink_item.view.*
 
 class DrinkAdapter (val context: Context, val drinks: List<Drink>): RecyclerView.Adapter<DrinkAdapter.ViewHolder>() {
+
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bindView(context, drinks[position])
     }

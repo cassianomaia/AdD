@@ -8,6 +8,13 @@
         android:orientation="vertical"
         tools:context=".Scenarios.MainActivity">
 
+    <ProgressBar
+            android:id="@+id/pbLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="invisible"/>
+
     <android.support.v7.widget.RecyclerView
             android:id="@+id/rvDrinks"
             android:layout_width="match_parent"
