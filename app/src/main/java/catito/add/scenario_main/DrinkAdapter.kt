@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import catito.add.R
+import catito.add.Utils.GlideApp
 import catito.add.entities.Drink
 import kotlinx.android.synthetic.main.drink_item.view.*
 
@@ -26,7 +27,13 @@ class DrinkAdapter (val context: Context, val drinks: List<Drink>): RecyclerView
 
     class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
         fun bindView(context: Context, drink: Drink) {
-            itemView.drink.text = drink.strDrink
+
+            GlideApp.with(context)
+                .load(drink.strDrinkThumb)
+                .centerCrop()
+                .into(itemView.imgDrink)
+
+            itemView.txtDrink.text = drink.strDrink
         }
     }
 }

@@ -3,9 +3,16 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="72dp">
 
-        <TextView android:id="@+id/drink"
+
+        <ImageView android:id="@+id/imgDrink"
+                   android:layout_width="100dp"
+                   android:layout_height="64dp"
+                   android:scaleType="centerCrop"
+                   android:layout_gravity="center_vertical"/>
+
+        <TextView android:id="@+id/txtDrink"
                   android:layout_width="match_parent"
                   android:layout_height="match_parent"
                   android:gravity="center_vertical"
