@@ -15,4 +15,8 @@ interface DrinkService {
     //Função para obter um drink através do ID
     @GET("lookup.php?i=")
     fun getDrinkID(@Query("i")query: String): Call<DrinkList>
+
+    //Função para obter um drink randomico
+    @GET("random.php")
+    fun getRandomDrink(): Call<DrinkList>
 }

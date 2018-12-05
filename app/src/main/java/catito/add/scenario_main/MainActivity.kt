@@ -16,10 +16,16 @@ class MainActivity : AppCompatActivity(), MainContract.View {
     companion object {
         const val DRINK_ACTIVITY = "drinkActivity"
     }
-    
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        btnRandom.setOnClickListener(){
+            showLoading()
+            val presenter: MainContract.Presenter = MainPresenter(this)
+            presenter.drinkRandom()
+        }
 
         val presenter: MainContract.Presenter= MainPresenter(this)
         presenter.onLoadList()

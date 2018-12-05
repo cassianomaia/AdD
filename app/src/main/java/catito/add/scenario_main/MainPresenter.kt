@@ -57,4 +57,27 @@ class MainPresenter(val view: MainContract.View) : MainContract.Presenter {
         })
     }
 
+    override fun drinkRandom() {
+        view.showLoading()
+
+        val drinkService = RetrofitInitializer().createDrinkService()
+        val call = drinkService.getRandomDrink()
+
+        call.enqueue(object: Callback<DrinkList> {
+            override fun onFailure(call: Call<DrinkList>, t: Throwable) {
+                view.hideLoading()
+                view.showMessage("Falha na conexão. Você está sem internet D:")
+            }
+
+            override fun onResponse(call: Call<DrinkList>, response: Response<DrinkList>) {
+                view.hideLoading()
+                if (response.body() != null) {
+                    view.startDrinkActivity(response.body()!!.drinks.first())
+                } else {
+                    view.showMessage("Drink não disponivel.")
+                }
+            }
+        })
+    }
+
 }

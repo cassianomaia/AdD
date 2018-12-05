@@ -15,5 +15,6 @@ interface MainContract {
     interface Presenter{
         fun onLoadList()
         fun onClickDrink(drinks: Drink)
+        fun drinkRandom()
     }
 }
