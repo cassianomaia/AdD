@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AdD</string>
+    <string name="nome_default">Aqui deveria ter um nome!</string>
 </resources>
