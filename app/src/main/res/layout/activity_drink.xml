@@ -1,10 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         tools:context=".scenario_drink.DrinkActivity">
 
-</android.support.constraint.ConstraintLayout>
+        <GridLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+            <ImageView android:id="@+id/imgDrink"
+                       android:layout_width="150dp"
+                       android:layout_height="98dp"
+                       android:layout_marginLeft="16dp"
+                       android:layout_marginRight="16dp"
+                       android:scaleType="centerCrop"
+                       android:layout_gravity="center_vertical"/>
+
+            <TextView android:id="@+id/txtDrink"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:gravity="center_vertical"
+                      android:textSize="24sp"
+                      android:layout_marginLeft="16dp"
+                      android:layout_marginRight="16dp"
+                      android:text="@string/nome_default"
+            />
+
+        </GridLayout>
+
+    <TextView android:id="@+id/txtCategoria"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="left"
+              android:textSize="20sp"
+              android:layout_marginTop="16dp"
+              android:layout_marginBottom="16dp"
+              android:layout_marginLeft="16dp"
+              android:layout_marginRight="16dp"
+              android:text="@string/nome_default"
+                />
+
+    <TextView android:id="@+id/txtIBA"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="left"
+              android:textSize="20sp"
+              android:layout_marginTop="16dp"
+              android:layout_marginBottom="16dp"
+              android:layout_marginLeft="16dp"
+              android:layout_marginRight="16dp"
+              android:text="@string/nome_default"
+    />
+
+    <TextView android:id="@+id/txtGlass"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="left"
+              android:textSize="20sp"
+              android:layout_marginTop="16dp"
+              android:layout_marginBottom="16dp"
+              android:layout_marginLeft="16dp"
+              android:layout_marginRight="16dp"
+              android:text="@string/nome_default"
+    />
+
+    <TextView android:id="@+id/txtInstructions"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="left"
+              android:textSize="20sp"
+              android:layout_marginTop="16dp"
+              android:layout_marginBottom="16dp"
+              android:layout_marginLeft="16dp"
+              android:layout_marginRight="16dp"
+              android:text="@string/nome_default"
+    />
+
+</LinearLayout>
