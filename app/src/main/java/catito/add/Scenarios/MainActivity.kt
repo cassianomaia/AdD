@@ -1,7 +1,8 @@
-package catito.add
+package catito.add.Scenarios
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import catito.add.R
 
 class MainActivity : AppCompatActivity() {
 
