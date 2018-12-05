@@ -1,4 +1,4 @@
-package catito.add.scenario_main
+package catito.add.Scenarios.scenario_main
 
 import android.content.Context
 import android.support.v7.widget.RecyclerView

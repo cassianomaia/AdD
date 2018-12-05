@@ -1,4 +1,4 @@
-package catito.add.scenario_main
+package catito.add.Scenarios.scenario_main
 
 import catito.add.Network.RetrofitInitializer
 import catito.add.entities.Drink

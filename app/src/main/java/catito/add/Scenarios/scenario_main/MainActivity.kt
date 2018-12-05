@@ -1,4 +1,4 @@
-package catito.add.scenario_main
+package catito.add.Scenarios.scenario_main
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
@@ -8,7 +8,7 @@ import android.widget.ProgressBar
 import android.widget.Toast
 import catito.add.R
 import catito.add.entities.Drink
-import catito.add.scenario_drink.DrinkActivity
+import catito.add.Scenarios.scenario_drink.DrinkActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), MainContract.View {

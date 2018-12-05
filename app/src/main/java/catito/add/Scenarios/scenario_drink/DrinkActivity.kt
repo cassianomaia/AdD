@@ -1,4 +1,4 @@
-package catito.add.scenario_drink
+package catito.add.Scenarios.scenario_drink
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
