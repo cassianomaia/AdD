@@ -38,4 +38,9 @@ class MainActivity : AppCompatActivity(), MainContract.View {
     override fun showLoading() {
         pbLoading.visibility = ProgressBar.VISIBLE
     }
+
+    override fun onResume() {
+        super.onResume()
+        hideLoading()
+    }
 }
