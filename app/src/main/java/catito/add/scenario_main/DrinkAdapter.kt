@@ -1,4 +1,4 @@
-package catito.add.Scenarios
+package catito.add.scenario_main
 
 import android.content.Context
 import android.support.v7.widget.RecyclerView
@@ -28,6 +28,5 @@ class DrinkAdapter (val context: Context, val drinks: List<Drink>): RecyclerView
         fun bindView(context: Context, drink: Drink) {
             itemView.drink.text = drink.strDrink
         }
-
     }
 }

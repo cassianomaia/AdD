@@ -1,4 +1,4 @@
-package catito.add.Scenarios
+package catito.add.scenario_main
 
 import catito.add.Network.RetrofitInitializer
 import catito.add.entities.DrinkList
@@ -6,9 +6,11 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class MainPresenter(val view: MainContract.View){
+class MainPresenter(val view: MainContract.View) : MainContract.Presenter {
 
-    fun onLoadList(){
+    override fun onLoadList(){
+
+        view.showLoading()
 
         val drinkService = RetrofitInitializer().createDrinkService()
 

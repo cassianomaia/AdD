@@ -2,6 +2,6 @@ package catito.add.entities
 
 import java.io.Serializable
 
-data class Drink(val idDrink: String,
+data class Drink(val strDrink: String,
                  val strDrinkThumb: String,
-                 val strDrink: String): Serializable
+                 val idDrink: String): Serializable

@@ -1,4 +1,4 @@
-package catito.add.Scenarios
+package catito.add.scenario_main
 
 import catito.add.entities.Drink
 

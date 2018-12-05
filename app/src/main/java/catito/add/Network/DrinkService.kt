@@ -8,5 +8,5 @@ interface DrinkService {
 
     //Função para obter todos os drinks alcoolicos
     @GET("filter.php?a=Alcoholic")
-    fun getAlcoholic(): Call<DrinkList>
+    fun getLista(): Call<DrinkList>
 }
